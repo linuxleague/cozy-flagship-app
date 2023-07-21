@@ -6404,10 +6404,10 @@ cozy-intent@^2.14.0:
   dependencies:
     post-me "0.4.5"
 
-cozy-logger@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.10.0.tgz#c040081976921c73021f0acc81d515700241a3f1"
-  integrity sha512-cChOYvbZ0rtzo6MEY4+ZLniKaDv46V8fdJ0qgRcPjDE1dDrfVvxyRWsKrSGIw+LTBqdrlfDpPoqjEiYC24xr+A==
+cozy-logger@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.10.1.tgz#077f2c517ce0d52eb28d19a22389ac0fb9fcc4b7"
+  integrity sha512-6/A5Hqd7cLHmCIhUdyaRdssb7wqsl+mcsVWG3ViJZUEKwtT3N/MoMptT/haPCDKR5XLxIlYbvLmQWom3qtJE+A==
   dependencies:
     chalk "^2.4.2"
     json-stringify-safe "5.0.1"
