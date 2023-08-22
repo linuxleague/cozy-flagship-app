@@ -189,7 +189,8 @@ const nativeMethodWrapper =
   }
 
 export const localMethods = (
-  client: CozyClient | undefined
+  client: CozyClient | undefined,
+  ...rest: Record<string, Promise<unknown>>[]
 ): NativeMethodsRegister | CustomMethods => {
   return {
     backToHome,
@@ -216,6 +217,7 @@ export const localMethods = (
     stopBackup: () => stopBackupWithClient(client),
     checkBackupPermissions,
     requestBackupPermissions,
-    setLang
+    setLang,
+    ...rest
   }
 }
