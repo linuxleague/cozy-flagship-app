@@ -51,7 +51,6 @@ export const uploadMedia = async (
 
   return uploadFileWithConflictStrategy({
     url: uploadUrl,
-    // @ts-expect-error Type issue which will be fixed in another PR
     token: client.getStackClient().token.accessToken as string,
     filename: media.name,
     filepath,
