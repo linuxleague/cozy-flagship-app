@@ -48,10 +48,15 @@ export const uploadMedia = async (
   media: Media
 ): Promise<UploadResult> => {
   const filepath = await getRealFilepath(media)
+  const token = client.getStackClient().token.accessToken
+
+  if (!token) {
+    throw new Error(t('services.backup.errors.unknownIssue'))
+  }
 
   return uploadFileWithConflictStrategy({
     url: uploadUrl,
-    token: client.getStackClient().token.accessToken as string,
+    token,
     filename: media.name,
     filepath,
     mimetype: getMimeType(media)
